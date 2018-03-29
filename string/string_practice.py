@@ -59,6 +59,22 @@ def hearSay(N):
     print("Hear-Say number of N = {} is {}\n".format(N, result))
 
 ###############################################################################
+## Reverse a string
+##
+## @param s string to reverse
+##
+###############################################################################
+def reverseString(s):
+    if s:
+	res = s
+	L = len(re)
+	for i in range(L // 2):
+	    c = s[i]
+	    s[i]= s[L - i - 1]
+	    s[L - i - 1] = c
+    return s
+
+###############################################################################
 ## Main program
 ###############################################################################
 if __name__ == "__main__":
@@ -76,4 +92,7 @@ if __name__ == "__main__":
     hearSay(5)
     hearSay(6)
     hearSay(7)
-
+    
+    # Reverse string
+    a = "Hello"
+    print("Reverse of {} is {}".format(a, reverseString(a)))
